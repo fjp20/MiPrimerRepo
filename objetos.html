@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function pc(marca, cpu, memoria){//especificando la funcion tipo pc
+            this.marca=marca;//propiedades de la funcion
+            this.cpu=cpu;
+            this.memoria=memoria
+        }
+        mipc = new pc("gigabyte", "intel core 5", "2gb" )//objeto o instanciando un objeto tipo mipc
+        mipc2 = new pc("AsRock", "Amd k8/sempron", "2gb")
+        mipc3 = new pc ("Asus", "AMD AM2", "4gb")
+        var mensaje;
+
+    </script>
+    <p> Seleccione un objeto<br>
+    </p>
+    <form action="" id ="formu">
+        <p>
+        </p>
+    <input type="radio" name="1" onclick='alert("mipc\rmarca: " + mipc.marca +"\n"
+    
+    +"cpu:" +mipc.cpu+"\n"
+
+    +"memoria"+mipc.memoria+"\n");'>
+    mipc<br>
+    <input type="radio" name="1" onclick='alert("mipc2\rmarca: " + mipc2.marca +"\n"
+    
+    +"cpu:" +mipc2.cpu+"\n"
+
+    +"memoria"+mipc2.memoria+"\n");'>
+    mipc2<br>
+    <input type="radio" name="1" onclick='alert("mipc3\rmarca: " + mipc3.marca +"\n"
+    
+    +"cpu:" +mipc3.cpu+"\n"
+
+    +"memoria"+mipc3.memoria+"\n");'>
+    mipc3<br>
+    </form>
+    </body>
+</html>

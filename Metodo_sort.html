@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function menormayor(a,b){
+            return a-b;
+        }
+        function mayormenor(a,b){
+            return b-a;
+
+        }
+        numeros = new Array(25, 89, 120, 28, 77, 72, 46, 27);
+        letras = new Array("e", "b", "c", "a", "d", "g", "f", "i", "h");
+        document.write("Numeros sin ordenar: " + (numeros.join()) + '<br>');
+        document.write("Numeros ordenaos por defecto: " + (numeros.sort())+ '<br>');
+        document.write("Ordenados de menor  mayor: " + (numeros.sort(menormayor)) + '<br>');
+        document.write("Ordenados de mayor a menor: " + (numeros.sort(mayormenor))+ '<br><br>');
+        document.write("Letras sin ordenar: " + (letras.join())+ '<br>');
+        document.write("Letras ordenadas por defecto: " + (letras.sort()) + '<br>');
+    </script>
+    
+</body>
+</html>

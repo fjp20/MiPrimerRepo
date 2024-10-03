@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        cifras = new Array(11,2,3,4,5);
+        meses = new Array("febrero", "Marzo", "pril", "Mayo", "Junio", "Julio", "Agosto", 
+            "Septiembre", "Octubre", "Noviembre", "Diciembre");
+            alert(cifras.toString());
+            document.write("El contenido de la matriz es: " + meses.join("-") +"<br/><br/>");
+            meses.splice(0,0,"enero");
+            document.write("Añadiendo un elemento queda asi: " +meses.join("-")+ "<br/><br/>");
+            meses.splice(3,1,"Abril");
+            document.write("Modificando el documento queda si: " + meses.join("-"));
+         
+    </script>
+    
+</body>
+</html>

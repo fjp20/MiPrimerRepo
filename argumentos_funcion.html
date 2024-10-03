@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Mensaje(Respuesta){
+            if(Respuesta==0)
+                alert("Vaya disparate. repase el capitulo 2");
+            if(Respuesta==1)
+                alert("La respuesta es correcta");
+            if(Respuesta==2)
+                alert ("casi...");
+            if(Respuesta>=3)
+                alert("dejemoslo por aqui");
+        }
+
+    </script>
+    
+</body>
+<p> Es javascript una version simple de java? 
+    <br>
+</p>
+<form action="" id="formu">
+    <p>
+        <input type="radio" name="R1" onclick="Mensaje(0);"/>
+        si por eso tiene la raiz
+        <br>
+        <input type="radio" name ="R1" onclick="Mensaje(1);"/>
+        No, es un lenguaje de programación creado por Netscape
+        <br/>
+        <input type="radio" name ="R1" onclick="Mensaje(2);"/>
+        No, es al reves.
+        <br/>
+        <input type="radio" name ="R1" onclick="Mensaje(3);"/>
+       No, javascript es el nombre de un navegador de internet
+        <br/>
+    </p>
+</form>
+</html>

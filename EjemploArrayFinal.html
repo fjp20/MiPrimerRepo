@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        jugador = new Array("Ferrero", "Nadal", "Moya", "Federer");
+        meses = new Array("Mayo", "Junio", "Julio");
+
+        Ferrero = new Array(1000, 1250, 1650);
+        Nadal = new Array(1250, 1450, 1650);
+        Moya = new Array(800, 1050, 1150);
+        Federer = new Array(1500, 1850, 2050);
+
+        total = new Array(Ferrero, Nadal, Moya, Federer);
+
+        document.write("<table><tr><td>Meses</td>");
+            for(recorremos=0; recorremos<3; recorremos++){
+                document.write("<td>"+meses[recorremos]+"</td>");
+            }
+            document.write("</tr>");
+            for(recorrejugador=0; recorrejugador <4; recorrejugador++){
+                document.write("<tr><td>"+jugador[recorrejugador]+"</td>");
+                    for(recorretotal=0; recorretotal <3; recorretotal++){
+                        document.write("<td>" +total[recorrejugador][recorretotal]+"</td>");
+                    }
+                    document.write("</tr>");
+            }
+            document.write("</table>");
+
+    </script>
+    
+</body>
+</html>

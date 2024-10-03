@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function mensajito(respuestita){
+            if(respuestita == 1)
+                alert("Tu respuesta es correcta");
+            if(respuestita==2)
+                alert("Casi, pero no es el resultado");
+            if(respuestita ==3)
+                alert("No, la respuesta es incorrecta");
+            if(respuestita >=4)
+                alert("Estas completamente perdido")
+        }
+
+
+    </script>
+    
+</body>
+<p> La independencioa de mexico ocurrio en 1810<br></p>
+
+<form action="" id="formula">
+
+<p>
+<input type="radio" name="Res1" onclick="mensajito(1);"/>
+Si la independencia ocurrio en 1810
+<br>
+<input type="radio" name="Res1" onclick="mensajito(2)"/>
+la independencia no fue en 1809
+<br>
+<input type="radio" name ="Res1" onclick="mensajito(3)"/>
+la independencia no fue en 1180
+<br>
+<input type="radio" name="Res1" onclick="mensajito(4)"/>
+Aun no ocurre
+<br>
+</p>
+</form>
+
+</html>
